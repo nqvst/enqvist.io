@@ -1,15 +1,5 @@
 [
   {
-    "title": "Spaghetti",
-    "text": "Spaghetti is a clipboard history manager that I built because I couldn't find one i liked.\n It is very simple but effective tool that I use all the time.",
-    "link": {
-      "url": "https://apps.apple.com/se/app/spaghett/id1530003470?l=en&mt=12",
-      "text": "Download it"
-    },
-    "imgUrl": "img/spaghetti.jpg",
-    "tags": ["Swift", "Appkit", "SnapKit", "MacOS"]
-  },
-  {
     "title": "Pendulum",
     "text": "Pendulum is one of my earliest game ideas. It's built around the idea that with one simple interaction it is possible to create very complex movement.\nI still feel there is more to explore with this game and I will definitely revisit the game for further development.",
     "link": { "url": "play/pendulum", "text": "Play it!" },
@@ -17,11 +7,14 @@
     "tags": ["Unity3d", "C#"]
   },
   {
-    "title": "Notelify",
-    "text": "Notelify is a note taking app that i put together because i wanted a place where I could put down notes fast and just scroll to older notes.\n It has a tagging system, but it's mostly made to be an infinite feed of notes. Initially I intended for it to have a fast search function, but I never got around to implementing that. \n there is however no e2e enncryption so i wouldn't recommend using the app for sensitive things.",
-    "link": { "url": "https://notelify.netlify.app", "text": "Try it out!" },
-    "imgUrl": "img/notelify.jpg",
-    "tags": ["React", "firebase", "SnapKit", "MacOS"]
+    "title": "Spaghetti",
+    "text": "Spaghetti is a clipboard history manager that I built because I couldn't find one i liked.\n It is very simple but effective tool that I use all the time.",
+    "link": {
+      "url": "https://apps.apple.com/se/app/spaghett/id1530003470?l=en&mt=12",
+      "text": "Download it"
+    },
+    "imgUrl": "img/spaghetti.jpg",
+    "tags": ["Swift", "AppKit", "SnapKit", "MacOS"]
   },
   {
     "title": "Thrusters",
@@ -29,5 +22,12 @@
     "link": { "url": "play/thrusters", "text": "Play it!" },
     "imgUrl": "img/thrusters.png",
     "tags": ["Unity3d", "C#"]
+  },
+  {
+    "title": "Notelify",
+    "text": "Notelify is a note taking app that i put together because i wanted a place where I could put down notes fast and just scroll to older notes.\n It has a tagging system, but it's mostly made to be an infinite feed of notes. Initially I intended for it to have a fast search function, but I never got around to implementing that. \n there is however no e2e enncryption so i wouldn't recommend using the app for sensitive things.",
+    "link": { "url": "https://notelify.netlify.app", "text": "Try it out!" },
+    "imgUrl": "img/notelify.jpg",
+    "tags": ["React", "firebase", "DraftJS"]
   }
 ]
