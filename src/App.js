@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './logo.svg'
+import './App.css'
+import Card from './Card'
+import { useEffect, useState } from 'react'
+import styled from 'styled-components'
+
+const Main = styled.div`
+  max-width: 600px;
+`
 
 function App() {
+  const [projects, setProjects] = useState([])
+  useEffect(() => {
+    if (!projects.length) {
+      fetch('data/projects.json')
+        .then((res) => res.json())
+        .then((res) => {
+          setProjects(res)
+        })
+    }
+  }, [projects])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Page is under construction. Check back later.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Main>
+        {projects.map((p) => {
+          return <Card {...p}></Card>
+        })}
+      </Main>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
