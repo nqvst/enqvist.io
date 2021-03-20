@@ -8,6 +8,7 @@ import styled from 'styled-components'
 
 const Main = styled.div`
   max-width: 600px;
+  padding: 10px;
 `
 
 const Hero = styled.div`
@@ -45,20 +46,19 @@ function App() {
 
   return (
     <div className="App">
-      <Hero>
-        <h1>Jack Enqvist</h1>
-        freelance web developer
-        <Socials>
-          <a href={'https://github.com/nqvst'}>
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
-          <a href={'https://se.linkedin.com/in/nqvst'}>
-            <FontAwesomeIcon icon={faLinkedin} />
-          </a>
-        </Socials>
-      </Hero>
-
       <Main>
+        <Hero>
+          <h1>Jack Enqvist</h1>
+          <small>freelance web developer</small>
+          <Socials>
+            <a href={'https://github.com/nqvst'}>
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
+            <a href={'https://se.linkedin.com/in/nqvst'}>
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+          </Socials>
+        </Hero>
         {projects.map((p) => {
           return <Card key={p.title} {...p}></Card>
         })}
