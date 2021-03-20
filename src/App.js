@@ -23,7 +23,7 @@ function App() {
     <div className="App">
       <Main>
         {projects.map((p) => {
-          return <Card {...p}></Card>
+          return <Card key={p.title} {...p}></Card>
         })}
       </Main>
     </div>

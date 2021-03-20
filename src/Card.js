@@ -79,7 +79,7 @@ const Card = ({ title, text, link, imgUrl, tags }) => {
 
         <Tags>
           {tags.map((tag) => {
-            return <span>{tag}</span>
+            return <span key={tag}>{tag}</span>
           })}
         </Tags>
         <StyledLink href={link.url}> {link.text}</StyledLink>
