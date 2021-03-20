@@ -32,7 +32,10 @@ const Text = styled.p`
 `
 
 const Tags = styled.div`
-  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 20px;
 
   & span {
     border-radius: 3px;
@@ -45,25 +48,12 @@ const Tags = styled.div`
 `
 
 const StyledLink = styled.a`
-  color: rgb(89, 167, 253);
-  padding: 10px 15px;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-  font-size: 16px;
-  text-align: center;
-
-  &:hover {
-    color: rgb(89, 167, 253);
-    text-decoration: underline;
-  }
-
-  &:active {
-    color: rgb(89, 167, 253);
-  }
-
+  background-color: rgb(89, 167, 253);
+  color: white;
+  padding: 20px;
+  &:active,
   &:visited {
-    color: rgb(89, 167, 253);
+    color: white;
   }
 `
 
