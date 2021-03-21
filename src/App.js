@@ -14,21 +14,11 @@ const Main = styled.div`
 const Hero = styled.div`
   & h1 {
     font-size: 45px;
-    margin-bottom: 10px;
-  }
-  /* border-bottom: 2px solid black; */
-  margin-bottom: 20px;
-`
 
-const Socials = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  & a {
-    margin: 10px;
-    font-size: 28px;
-    padding: 0;
-    color: #111;
+    & small {
+      font-size: 16px;
+      font-weight: normal;
+    }
   }
 `
 
@@ -48,16 +38,9 @@ function App() {
     <div className="App">
       <Main>
         <Hero>
-          <h1>Jack Enqvist</h1>
-          <small>freelance web developer</small>
-          <Socials>
-            <a href={'https://github.com/nqvst'}>
-              <FontAwesomeIcon icon={faGithub} />
-            </a>
-            <a href={'https://se.linkedin.com/in/nqvst'}>
-              <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-          </Socials>
+          <h1>
+            Jack Enqvist | <small>freelance web developer</small>
+          </h1>
         </Hero>
         {projects.map((p) => {
           return <Card key={p.title} {...p}></Card>

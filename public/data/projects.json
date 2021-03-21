@@ -1,10 +1,55 @@
 [
   {
+    "title": "Hello!",
+    "text": "I am a freelance web developer with 10 years of experience building web applications in technologies such as Javascript, React, Java, Spring boot and more. \n When I'm not playing overwatch I love to spend time building my own games. I am currently working on a very ambitious coop rpg based on beautiful swedish nature and cute nordic animals.",
+    "link": {
+      "url": "https://www.linkedin.com/in/nqvst/",
+      "text": "Contact",
+      "backgroundColor": "#0b65c2"
+    },
+    "imgUrl": "img/jack.jpg",
+    "tags": ["JavaScript", "React", "nodeJS", "Java", "Swift", "Unity3D"]
+  },
+  {
+    "title": "Comhem",
+    "text": "As a consultant at comhem I was part of a team focused on optimizing the purchase flows and increasing profits based on A/B tests and analytics.",
+    "link": {
+      "url": "https://comhem.se",
+      "text": "check it out!",
+      "backgroundColor": "#333"
+    },
+    "imgUrl": "img/comhem.png",
+    "tags": ["React", "JavaScript", "Java", "Spring Boot"]
+  },
+  {
+    "skip": true,
+    "title": "Tele2",
+    "text": "tele2",
+    "link": {
+      "url": "https://tele2.se",
+      "text": "check it out!",
+      "backgroundColor": "#111"
+    },
+    "imgUrl": "img/tele2.png",
+    "tags": ["React", "TypeScript", "GraphQL", "Azure", "Kubernetes", "Docker"]
+  },
+  {
     "title": "Pendulum",
     "text": "Pendulum is one of my earliest game ideas. It's built around the idea that with one simple interaction it is possible to create very complex movement.\nI still feel there is more to explore with this game and I will definitely revisit the game for further development.",
     "link": { "url": "play/pendulum", "text": "Play it!" },
     "imgUrl": "img/pendulum.gif",
     "tags": ["Unity3d", "C#"]
+  },
+  {
+    "title": "Aftonbladet",
+    "text": "I worked at aftonbladet between 2014 and 2019 mainly rebuilding the the site in React.",
+    "link": {
+      "url": "https://aftonbladet.se",
+      "text": "Read some news!",
+      "backgroundColor": "#dd2a30"
+    },
+    "imgUrl": "img/aftonbladet.png",
+    "tags": ["React", "JavaScript"]
   },
   {
     "title": "Spaghetti",
@@ -24,9 +69,24 @@
     "tags": ["Unity3d", "C#"]
   },
   {
+    "title": "Stockholm University",
+    "text": "I worked at Stockholm University between 2011 and 2014 maintaining many different services and systems. I mostly worked in Java, Spring, and Grails/Groovy",
+    "link": {
+      "url": "https://su.se",
+      "text": "Study Something!",
+      "backgroundColor": "#002f5f"
+    },
+    "imgUrl": "img/su.png",
+    "tags": ["Java", "jQuery", "Grails"]
+  },
+  {
     "title": "Notelify",
     "text": "Notelify is a note taking app that i put together because i wanted a place where I could put down notes fast and just scroll to older notes.\n It has a tagging system, but it's mostly made to be an infinite feed of notes. Initially I intended for it to have a fast search function, but I never got around to implementing that. \n there is however no e2e enncryption so i wouldn't recommend using the app for sensitive things.",
-    "link": { "url": "https://notelify.netlify.app", "text": "Try it out!" },
+    "link": {
+      "url": "https://notelify.netlify.app",
+      "text": "Try it out!",
+      "backgroundColor": "#db7093"
+    },
     "imgUrl": "img/notelify.jpg",
     "tags": ["React", "firebase", "DraftJS"]
   }
