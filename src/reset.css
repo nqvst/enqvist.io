@@ -130,8 +130,10 @@ a {
   font-size: 16px;
   text-align: center;
 }
+
 a:hover {
   color: rgb(89, 167, 253);
+  opacity: 0.9;
 }
 
 a:active {

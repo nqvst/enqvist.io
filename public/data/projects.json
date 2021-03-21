@@ -65,7 +65,7 @@
     "title": "Thrusters",
     "text": "Thrusters is a game where you control a small rocket and try not to crash. It has been said it is really hard.",
     "link": { "url": "play/thrusters", "text": "Play it!" },
-    "imgUrl": "img/thrusters.png",
+    "imgUrl": "img/thrusters.gif",
     "tags": ["Unity3d", "C#"]
   },
   {

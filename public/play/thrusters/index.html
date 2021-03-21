@@ -1,35 +1,93 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Unity WebGL Player | Thruster</title>
-    <link rel="stylesheet" href="TemplateData/style.css">
     <link rel="shortcut icon" href="TemplateData/favicon.ico" />
-    <script src="TemplateData/UnityProgress.js"></script>
+    <link rel="stylesheet" href="TemplateData/style.css" />
   </head>
-  <body class="template">
-    <div class="template-wrap clear">
-      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
-      <br>
-      <div class="logo"></div>
-      <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
-      <div class="title">Thruster</div>
+  <body>
+    <div id="unity-container" class="unity-desktop">
+      <p>Use the shift keys to controll the 2 engines.</p>
+      <canvas id="unity-canvas"></canvas>
+      <div id="unity-loading-bar">
+        <div id="unity-logo"></div>
+        <div id="unity-progress-bar-empty">
+          <div id="unity-progress-bar-full"></div>
+        </div>
+      </div>
+      <div id="unity-mobile-warning">
+        WebGL builds are not supported on mobile devices.
+      </div>
+      <div id="unity-footer">
+        <div id="unity-webgl-logo"></div>
+        <div id="unity-fullscreen-button"></div>
+        <div id="unity-build-title">Thruster</div>
+      </div>
     </div>
-    <script type='text/javascript'>
-  var Module = {
-    TOTAL_MEMORY: 268435456,
-    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
-    compatibilitycheck: null,
-    backgroundColor: "#222C36",
-    splashStyle: "Light",
-    dataUrl: "Release/web-build-5.2.data",
-    codeUrl: "Release/web-build-5.2.js",
-    asmUrl: "Release/web-build-5.2.asm.js",
-    memUrl: "Release/web-build-5.2.mem",
-  };
-</script>
-<script src="Release/UnityLoader.js"></script>
+    <script>
+      const uA = navigator.userAgent
+      const vendor = navigator.vendor
+      if (
+        /Safari/i.test(uA) &&
+        /Apple Computer/.test(vendor) &&
+        !/Mobi|Android/i.test(uA)
+      ) {
+        alert(
+          'there is a bug in safari that makes this game unplayable. please try another browser.'
+        )
+      }
 
+      var buildUrl = 'Build'
+      var loaderUrl = buildUrl + '/Web.loader.js'
+      var config = {
+        dataUrl: buildUrl + '/Web.data',
+        frameworkUrl: buildUrl + '/Web.framework.js',
+        codeUrl: buildUrl + '/Web.wasm',
+        streamingAssetsUrl: 'StreamingAssets',
+        companyName: 'me0w',
+        productName: 'Thruster',
+        productVersion: '1.0',
+      }
+
+      var container = document.querySelector('#unity-container')
+      var canvas = document.querySelector('#unity-canvas')
+      var loadingBar = document.querySelector('#unity-loading-bar')
+      var progressBarFull = document.querySelector('#unity-progress-bar-full')
+      var fullscreenButton = document.querySelector('#unity-fullscreen-button')
+      var mobileWarning = document.querySelector('#unity-mobile-warning')
+
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        container.className = 'unity-mobile'
+        config.devicePixelRatio = 1
+        mobileWarning.style.display = 'block'
+        setTimeout(() => {
+          mobileWarning.style.display = 'none'
+        }, 5000)
+      } else {
+        canvas.style.width = '960px'
+        canvas.style.height = '600px'
+      }
+      loadingBar.style.display = 'block'
+
+      var script = document.createElement('script')
+      script.src = loaderUrl
+      script.onload = () => {
+        createUnityInstance(canvas, config, (progress) => {
+          progressBarFull.style.width = 100 * progress + '%'
+        })
+          .then((unityInstance) => {
+            loadingBar.style.display = 'none'
+            fullscreenButton.onclick = () => {
+              unityInstance.SetFullscreen(1)
+            }
+          })
+          .catch((message) => {
+            alert(message)
+          })
+      }
+      document.body.appendChild(script)
+    </script>
   </body>
 </html>
