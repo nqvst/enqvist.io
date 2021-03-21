@@ -39,7 +39,7 @@ const Tags = styled.div`
   flex-direction: row;
   justify-content: flex-end;
   padding: 20px;
-
+  flex-wrap: wrap;
   & span {
     border-radius: 5px;
     padding: 3px 8px;
@@ -67,28 +67,25 @@ const Card = ({ skip, title, text, link, imgUrl, tags }) => {
     return null
   }
   return (
-    <article>
-      <ShadowDiv>
-        <StyledImg src={imgUrl} />
-        <CardTitle>
-          <h2>{title}</h2>
-        </CardTitle>
-        <Text>{text}</Text>
-
-        <Tags>
-          {tags.map((tag) => {
-            return <span key={tag}>{tag}</span>
-          })}
-        </Tags>
-        <StyledLink
-          target="_blank"
-          href={link.url}
-          backgroundColor={link.backgroundColor}
-        >
-          {link.text}
-        </StyledLink>
-      </ShadowDiv>
-    </article>
+    <ShadowDiv>
+      <StyledImg src={imgUrl} />
+      <CardTitle>
+        <h2>{title}</h2>
+      </CardTitle>
+      <Text>{text}</Text>
+      <Tags>
+        {tags.map((tag) => {
+          return <span key={tag}>{tag}</span>
+        })}
+      </Tags>
+      <StyledLink
+        target="_blank"
+        href={link.url}
+        backgroundColor={link.backgroundColor}
+      >
+        {link.text}
+      </StyledLink>
+    </ShadowDiv>
   )
 }
 

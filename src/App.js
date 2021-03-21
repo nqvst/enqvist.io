@@ -5,15 +5,16 @@ import { useEffect, useState } from 'react'
 import styled from 'styled-components'
 
 const Main = styled.div`
-  max-width: 600px;
+  max-width: 500px;
   padding: 10px;
 `
 
 const Hero = styled.div`
   & h1 {
-    font-size: 45px;
+    font-size: 30px;
 
     & small {
+      white-space: nowrap;
       font-size: 16px;
       font-weight: normal;
     }
@@ -33,18 +34,16 @@ function App() {
   }, [projects])
 
   return (
-    <div className="App">
-      <Main>
-        <Hero>
-          <h1>
-            Jack Enqvist | <small>freelance web developer</small>
-          </h1>
-        </Hero>
-        {projects.map((p) => {
-          return <Card key={p.title} {...p}></Card>
-        })}
-      </Main>
-    </div>
+    <Main>
+      <Hero>
+        <h1>
+          Jack Enqvist | <small>freelance web developer</small>
+        </h1>
+      </Hero>
+      {projects.map((p) => {
+        return <Card key={p.title} {...p}></Card>
+      })}
+    </Main>
   )
 }
 
