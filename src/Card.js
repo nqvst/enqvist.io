@@ -1,7 +1,10 @@
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import styled from 'styled-components'
 
 const ShadowDiv = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   border-radius: 15px;
@@ -62,12 +65,40 @@ const StyledLink = styled.a`
   }
 `
 
-const Card = ({ skip, title, text, link, imgUrl, tags }) => {
+const RepoLink = styled.a`
+  background-color: #111;
+  font-size: 40px;
+  transform: rotate(-45deg);
+  padding: 60px;
+  padding-bottom: 0;
+  left: -73px;
+  top: -46px;
+  z-index: 1;
+  position: absolute;
+  color: white;
+  box-shadow: 3px 3px 11px #999;
+  &:active,
+  &:visited {
+    color: white;
+  }
+
+  &:hover {
+    color: #f1f1f1;
+  }
+`
+
+const Card = ({ skip, title, text, link, imgUrl, tags, repo }) => {
   if (skip) {
     return null
   }
+
   return (
     <ShadowDiv>
+      {repo && (
+        <RepoLink href={repo.url} target="_blank">
+          <FontAwesomeIcon icon={faGithub} />
+        </RepoLink>
+      )}
       <StyledImg src={imgUrl} />
       <CardTitle>
         <h2>{title}</h2>

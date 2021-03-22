@@ -58,6 +58,9 @@
       "url": "https://apps.apple.com/se/app/spaghett/id1530003470?l=en&mt=12",
       "text": "Download it"
     },
+    "repo": {
+      "url": "https://github.com/nqvst/Spaghetti"
+    },
     "imgUrl": "img/spaghetti.jpg",
     "tags": ["Swift", "AppKit", "SnapKit", "MacOS"]
   },
@@ -66,7 +69,10 @@
     "text": "Thrusters is a game where you control a small rocket and try not to crash. It has been said it is really hard.",
     "link": { "url": "play/thrusters", "text": "Play it!" },
     "imgUrl": "img/thrusters.gif",
-    "tags": ["Unity3d", "C#"]
+    "tags": ["Unity3d", "C#"],
+    "repo": {
+      "url": "https://github.com/nqvst/Lift"
+    }
   },
   {
     "title": "Stockholm University",
@@ -95,7 +101,10 @@
     "text": "Blokkii is a casual puzzle game with some nice music. it can be a bit tricky but you'll get there. (be patient with the loading... it can take a while)",
     "link": { "url": "play/blokkii", "text": "Play it!" },
     "imgUrl": "img/blokkii.jpg",
-    "tags": ["Unity3d", "C#"]
+    "tags": ["Unity3d", "C#"],
+    "repo": {
+      "url": "https://github.com/nqvst/blokkii"
+    }
   },
   {
     "title": "enqvist.io",
@@ -105,6 +114,9 @@
       "text": "Go to the site... again...?"
     },
     "imgUrl": "img/enqvist.io.png",
-    "tags": ["React"]
+    "tags": ["React"],
+    "repo": {
+      "url": "https://github.com/nqvst/enqvist.io"
+    }
   }
 ]
