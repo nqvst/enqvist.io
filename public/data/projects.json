@@ -38,7 +38,10 @@
     "text": "Pendulum is one of my earliest game ideas. It's built around the idea that with one simple interaction it is possible to create very complex movement.\nI still feel there is more to explore with this game and I will definitely revisit the game for further development.",
     "link": { "url": "play/pendulum", "text": "Play it!" },
     "imgUrl": "img/pendulum.gif",
-    "tags": ["Unity3d", "C#"]
+    "tags": ["Unity3d", "C#"],
+    "repo": {
+      "url": "https://github.com/nqvst/Pendulum"
+    }
   },
   {
     "title": "Aftonbladet",
