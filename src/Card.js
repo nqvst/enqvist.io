@@ -54,8 +54,7 @@ const Tags = styled.div`
 `
 
 const StyledLink = styled.a`
-  background-color: ${({ backgroundColor }) =>
-    backgroundColor || 'rgb(89, 167, 253)'};
+  background: ${({ background }) => background || 'rgb(89, 167, 253)'};
   color: white;
   padding: 20px;
   &:active,
@@ -109,11 +108,7 @@ const Card = ({ skip, title, text, link, imgUrl, tags, repo }) => {
           return <span key={tag}>{tag}</span>
         })}
       </Tags>
-      <StyledLink
-        target="_blank"
-        href={link.url}
-        backgroundColor={link.backgroundColor}
-      >
+      <StyledLink target="_blank" href={link.url} background={link.background}>
         {link.text}
       </StyledLink>
     </ShadowDiv>

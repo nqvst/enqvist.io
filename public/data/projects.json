@@ -5,10 +5,30 @@
     "link": {
       "url": "https://www.linkedin.com/in/nqvst/",
       "text": "Contact",
-      "backgroundColor": "#0b65c2"
+      "background": "#0b65c2"
     },
     "imgUrl": "img/jack.jpg",
-    "tags": ["JavaScript", "React", "nodeJS", "Java", "Swift", "Unity3D"]
+    "tags": [
+      "JavaScript",
+      "React",
+      "TypeScript",
+      "GraphQL",
+      "nodeJS",
+      "Java",
+      "Swift",
+      "Unity3D"
+    ]
+  },
+  {
+    "title": "Tele2",
+    "text": "At Tele2 I am building some secret stuff. but it is alot of cool tech. like GraphQL, Typscript and Redux Sagas.",
+    "link": {
+      "url": "https://tele2.se",
+      "text": "check it out!",
+      "background": "#111"
+    },
+    "imgUrl": "img/tele2.png",
+    "tags": ["React", "TypeScript", "GraphQL", "Azure", "Kubernetes", "Docker"]
   },
   {
     "title": "Comhem",
@@ -16,22 +36,10 @@
     "link": {
       "url": "https://comhem.se",
       "text": "check it out!",
-      "backgroundColor": "#333"
+      "background": "linear-gradient(to right,#ffcd00 ,#009941,#02c3fe,#0f5ab9,#a064dc,#ff55aa, #ff2c1e);"
     },
     "imgUrl": "img/comhem.png",
     "tags": ["React", "JavaScript", "Java", "Spring Boot"]
-  },
-  {
-    "skip": true,
-    "title": "Tele2",
-    "text": "tele2",
-    "link": {
-      "url": "https://tele2.se",
-      "text": "check it out!",
-      "backgroundColor": "#111"
-    },
-    "imgUrl": "img/tele2.png",
-    "tags": ["React", "TypeScript", "GraphQL", "Azure", "Kubernetes", "Docker"]
   },
   {
     "title": "Pendulum",
@@ -49,7 +57,7 @@
     "link": {
       "url": "https://aftonbladet.se",
       "text": "Read some news!",
-      "backgroundColor": "#dd2a30"
+      "background": "#dd2a30"
     },
     "imgUrl": "img/aftonbladet.png",
     "tags": ["React", "JavaScript"]
@@ -83,7 +91,7 @@
     "link": {
       "url": "https://su.se",
       "text": "Study Something!",
-      "backgroundColor": "#002f5f"
+      "background": "#002f5f"
     },
     "imgUrl": "img/su.png",
     "tags": ["Java", "jQuery", "Grails"]
@@ -94,7 +102,7 @@
     "link": {
       "url": "https://notelify.netlify.app",
       "text": "Try it out!",
-      "backgroundColor": "#db7093"
+      "background": "#db7093"
     },
     "imgUrl": "img/notelify.jpg",
     "tags": ["React", "firebase", "DraftJS"]
