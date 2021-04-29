@@ -21,14 +21,23 @@
   },
   {
     "title": "Tele2",
-    "text": "At Tele2 I am building some secret stuff. but it is alot of cool tech. like GraphQL, Typscript and Redux Sagas.",
+    "text": "At Tele2 I have been part of a team that has been rebuilding the new refreshed version of tele2.se (2021) where comhem and tel2 is now one brand. \n We have been using GraphQL and typscript together with react sagas to build new and improved purchase flows. A big part of the effort has been to sort out all the integrations from the old comhem and tele2 stacks",
     "link": {
       "url": "https://tele2.se",
       "text": "check it out!",
       "background": "#111"
     },
     "imgUrl": "img/tele2.png",
-    "tags": ["React", "TypeScript", "GraphQL", "Azure", "Kubernetes", "Docker"]
+    "tags": [
+      "React",
+      "TypeScript",
+      "GraphQL",
+      "Azure",
+      "Kubernetes",
+      "Docker",
+      "Redis",
+      "Node Cache"
+    ]
   },
   {
     "title": "Comhem",
