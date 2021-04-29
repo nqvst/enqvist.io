@@ -21,7 +21,7 @@
   },
   {
     "title": "Tele2",
-    "text": "At Tele2 I have been part of a team that has been rebuilding the new refreshed version of tele2.se (2021) where comhem and tel2 is now one brand. \n We have been using GraphQL and typscript together with react sagas to build new and improved purchase flows. A big part of the effort has been to sort out all the integrations from the old comhem and tele2 stacks",
+    "text": "At Tele2 I have been part of a team that has been rebuilding the new refreshed version of tele2.se (2021) where comhem and tele2 is now one brand. \n We have been using GraphQL and typscript/React together with react sagas to build new and improved site. A big part of the effort has been to sort out all the integrations from the old comhem and tele2 stacks",
     "link": {
       "url": "https://tele2.se",
       "text": "check it out!",
